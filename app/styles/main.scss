@@ -1,0 +1,22 @@
+<<<<<<< HEAD
+=======
+// bower:scss
+// endbower
+>>>>>>> 7b531bbffbfa914041f9973a699c2fe05aca3239
+body {
+  padding: 0;
+}
+
+.tabsdemoDynamicHeight md-content {
+  background-color: transparent !important; 
+}
+.tabsdemoDynamicHeight md-content md-tabs {
+    background: #fff;
+    border: 1px solid #e1e1e1;
+}
+.tabsdemoDynamicHeight md-content md-tabs md-tabs-wrapper {
+      background: black;
+  }
+  .tabsdemoDynamicHeight md-content h1:first-child {
+    margin-top: 0;
+}

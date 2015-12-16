@@ -1,0 +1,68 @@
+'use strict';
+
+/**
+ * @ngdoc function
+ * @name androidAppApp.controller:MainCtrl
+ * @description
+ * # MainCtrl
+ * Controller of the androidAppApp
+ */
+<<<<<<< HEAD
+
+
+angular.module('androidAppApp')
+  .controller('MainCtrl', function ($scope, $mdSidenav, $mdDialog, $mdMedia) {
+    console.log('');
+
+    $scope.status = '';
+    $scope.customFullscreen = $mdMedia('sm');
+
+    this.onSwipeRight = function() {
+      $mdSidenav('left').toggle();
+      console.log('hacia la derecha!!');
+    };
+
+    this.showTabDialog = function(ev, nom) {
+        $scope.nombre = nom;
+        console.log($scope.nombre);
+        $mdDialog.show({
+            controller: DialogController,
+            templateUrl: 'views/descripcion.html',
+            parent: angular.element(document.body),
+            targetEvent: ev,
+            clickOutsideToClose:true
+        })
+        .then(function(answer) {
+          $scope.status = 'You said the information was "' + answer + '".';
+        }, function() {
+          $scope.status = 'You cancelled the dialog.';
+        });
+    };
+
+    var DialogController = function ($scope, $mdDialog) {
+        $scope.nombre = 'Especificar';
+        $scope.hide = function() {
+            $mdDialog.hide();
+        };
+        $scope.cancel = function() {
+            $mdDialog.cancel();
+        };
+        $scope.answer = function(answer) {
+            $mdDialog.hide(answer);
+        };
+    };
+});
+=======
+angular.module('androidAppApp')
+  .controller('MainCtrl', function ($scope, $mdSidenav) {
+    this.awesomeThings = [
+      'HTML5 Boilerplate',
+      'AngularJS',
+      'Karma'
+    ];
+    $scope.onSwipeRight = function() {
+      $mdSidenav('left').toggle();
+      console.log('hacia la derecha!!');
+    };
+  });
+>>>>>>> 7b531bbffbfa914041f9973a699c2fe05aca3239

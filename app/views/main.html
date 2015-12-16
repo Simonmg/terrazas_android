@@ -1,0 +1,522 @@
+<<<<<<< HEAD
+ <md-tabs class="md-primary" md-center-tabs="false" md-swipe-content="true" md-dynamic-height md-border-bottom>
+   <md-tab label="Entrada">
+    <md-menu md-position-mode="target-right target" layout="row" flex="100">
+                    <!-- Trigger element is a md-button with an icon -->
+                    <md-button ng-click="$mdOpenMenu($event)" class="md-icon-button" aria-label="Configuración">
+                        <md-icon md-svg-icon="search"></md-icon>
+                    </md-button>
+                    <md-menu-content>
+                        <md-menu-item>
+
+                        </md-menu-item>
+                    </md-menu-content>
+    </md-menu>
+   	<md-content class="md-padding" layout-gt-xs="column" layout="row" layout-align="start start" layout-wrap>
+   		<div flex-gt-sm="25" flex="50">
+         <md-card>
+         		<md-card-title>
+           			<md-card-title-text>
+
+           				</md-card-title-text>
+         		</md-card-title>
+         		<md-card-content>
+           			<img flex="100" ng-src="images/plato1.jpg" class="md-card-image" alt="" style="width: auto; height:auto" ng-click="main.showTabDialog($event, 'Plato 1', 'Descripción del plato 1')">
+         		</md-card-content>
+         		<md-card-actions layout="row" layout-align="end center">
+           			<md-button class="md-icon-button" aria-label="Favorite">
+           				<md-icon md-svg-icon="heart"></md-icon>
+           			</md-button>
+           			<md-button class="md-icon-button" aria-label="Settings">
+           				<md-icon md-svg-icon="menu"></md-icon>
+           			</md-button>
+           			<md-button class="md-icon-button" aria-label="Share">
+           				<md-icon md-svg-icon="share"></md-icon>
+           			</md-button>
+         		</md-card-actions>
+       		</md-card>
+        </div>
+         <div flex-gt-sm="25" flex="50">
+       		<md-card ng-click="main.showTabDialog($event, 'Plato 2', 'Descripción del plato 2')">
+         		<img ng-src="" class="md-card-image" alt="">
+         		<md-card-title>
+           			<md-card-title-text>
+
+           				</md-card-title-text>
+         		</md-card-title>
+         		<md-card-content>
+           			<img flex="100" ng-src="images/plato2.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+         		</md-card-content>
+         		<md-card-actions layout="row" layout-align="end center">
+           			<md-button class="md-icon-button" aria-label="Favorite">
+           				<md-icon md-svg-icon="heart"></md-icon>
+           			</md-button>
+           			<md-button class="md-icon-button" aria-label="Settings">
+           				<md-icon md-svg-icon="menu"></md-icon>
+           			</md-button>
+           			<md-button class="md-icon-button" aria-label="Share">
+           				<md-icon md-svg-icon="share"></md-icon>
+           			</md-button>
+         		</md-card-actions>
+       		</md-card>
+   		</div>
+       <div flex-gt-sm="25" flex="50">
+         <md-card ng-click="main.showTabDialog($event, 'Plato 3', 'Descripción del plato 3')">
+             <img ng-src="" class="md-card-image" alt="">
+             <md-card-title>
+                 <md-card-title-text>
+
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato3.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+         <div flex-gt-sm="25" flex="50">
+         <md-card ng-click="main.showTabDialog($event, 'Plato 4', 'Descripción del plato 4')">
+             <img ng-src="" class="md-card-image" alt="">
+             <md-card-title>
+                 <md-card-title-text>
+
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato4.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+         <div flex-gt-sm="25" flex="50">
+         <md-card ng-click="main.showTabDialog($event, 'Plato 5', 'Descripción del plato 5')">
+             <img ng-src="" class="md-card-image" alt="">
+             <md-card-title>
+                 <md-card-title-text>
+                    <md-checkbox ng-model="isChecked" aria-label="Finished?"></md-checkbox>
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato5.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+      </md-content>
+   </md-tab>
+   <md-tab label="Ensaladas">
+   	<md-content class="md-padding" layout-gt-xs="column" layout="row" layout-align="start start" layout-wrap>
+           <div flex-gt-sm="25" flex="50">
+                <md-card ng-click="main.showTabDialog($event, 'Plato 1')">
+             <md-card-title>
+                 <md-card-title-text>
+
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato1.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+         <div flex-gt-sm="25" flex="50">
+           <md-card ng-click="main.showTabDialog($event, 'Plato 2')">
+             <img ng-src="" class="md-card-image" alt="">
+             <md-card-title>
+                 <md-card-title-text>
+
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato2.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+       </div>
+       <div flex-gt-sm="25" flex="50">
+         <md-card ng-click="main.showTabDialog($event, 'Plato 3')">
+             <img ng-src="" class="md-card-image" alt="">
+             <md-card-title>
+                 <md-card-title-text>
+
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato3.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+         <div flex-gt-sm="25" flex="50">
+         <md-card ng-click="main.showTabDialog($event, 'Plato 4')">
+             <img ng-src="" class="md-card-image" alt="">
+             <md-card-title>
+                 <md-card-title-text>
+
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato4.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+         <div flex-gt-sm="25" flex="50">
+         <md-card ng-click="main.showTabDialog($event, 'Plato 5')">
+             <img ng-src="" class="md-card-image" alt="">
+             <md-card-title>
+                 <md-card-title-text>
+                    <md-checkbox ng-model="isChecked" aria-label="Finished?"></md-checkbox>
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato5.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+     </md-content>
+   </md-tab>
+   <md-tab label="Bebidas">
+   	<md-content class="md-padding" layout-gt-xs="column" layout="row" layout-align="start start" layout-wrap>
+           <div flex-gt-sm="25" flex="50">
+                <md-card ng-click="main.showTabDialog($event, 'Plato 1')">
+             <md-card-title>
+                 <md-card-title-text>
+
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato1.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+         <div flex-gt-sm="25" flex="50">
+           <md-card ng-click="main.showTabDialog($event, 'Plato 2')">
+             <img ng-src="" class="md-card-image" alt="">
+             <md-card-title>
+                 <md-card-title-text>
+
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato2.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+       </div>
+       <div flex-gt-sm="25" flex="50">
+         <md-card ng-click="main.showTabDialog($event, 'Plato 3')">
+             <img ng-src="" class="md-card-image" alt="">
+             <md-card-title>
+                 <md-card-title-text>
+
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato3.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+         <div flex-gt-sm="25" flex="50">
+         <md-card ng-click="main.showTabDialog($event, 'Plato 4')">
+             <img ng-src="" class="md-card-image" alt="">
+             <md-card-title>
+                 <md-card-title-text>
+
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato4.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+         <div flex-gt-sm="25" flex="50">
+         <md-card ng-click="main.showTabDialog($event, 'Plato 5')">
+             <img ng-src="" class="md-card-image" alt="">
+             <md-card-title>
+                 <md-card-title-text>
+                    <md-checkbox ng-model="isChecked" aria-label="Finished?"></md-checkbox>
+                   </md-card-title-text>
+             </md-card-title>
+             <md-card-content>
+                 <img flex="100" ng-src="images/plato5.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+             </md-card-content>
+             <md-card-actions layout="row" layout-align="end center">
+                 <md-button class="md-icon-button" aria-label="Favorite">
+                   <md-icon md-svg-icon="heart"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Settings">
+                   <md-icon md-svg-icon="menu"></md-icon>
+                 </md-button>
+                 <md-button class="md-icon-button" aria-label="Share">
+                   <md-icon md-svg-icon="share"></md-icon>
+                 </md-button>
+             </md-card-actions>
+           </md-card>
+         </div>
+     </md-content>
+   </md-tab>
+ </md-tabs>
+=======
+<md-tabs class="md-primary" md-center-tabs="false" md-swipe-content="true" md-dynamic-height md-border-bottom>
+  <md-tab label="Entrada">
+  	<md-content class="md-padding" layout-gt-xs="column" layout="row" layout-align="start start" layout-wrap>
+  		<div flex-gt-sm="25" flex="50">  			
+               <md-card ng-click="showTabDialog($event, 'Plato 1')">        		
+        		<md-card-title>
+          			<md-card-title-text>
+                       
+          				</md-card-title-text>
+        		</md-card-title>
+        		<md-card-content>
+          			<img flex="100" ng-src="images/plato1.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+        		</md-card-content>        		   
+        		<md-card-actions layout="row" layout-align="end center">
+          			<md-button class="md-icon-button" aria-label="Favorite">
+          				<md-icon md-svg-icon="heart"></md-icon>
+          			</md-button>
+          			<md-button class="md-icon-button" aria-label="Settings">
+          				<md-icon md-svg-icon="menu"></md-icon>
+          			</md-button>
+          			<md-button class="md-icon-button" aria-label="Share">
+          				<md-icon md-svg-icon="share"></md-icon>
+          			</md-button>
+        		</md-card-actions>
+      		</md-card>
+        </div>
+        <div flex-gt-sm="25" flex="50">
+      		<md-card ng-click="showTabDialog($event, 'Plato 2')">
+        		<img ng-src="" class="md-card-image" alt="">
+        		<md-card-title>
+          			<md-card-title-text>
+            				
+          				</md-card-title-text>
+        		</md-card-title>
+        		<md-card-content>
+          			<img flex="100" ng-src="images/plato1.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+        		</md-card-content>
+        		<md-card-actions layout="row" layout-align="end center">
+          			<md-button class="md-icon-button" aria-label="Favorite">
+          				<md-icon md-svg-icon="heart"></md-icon>
+          			</md-button>
+          			<md-button class="md-icon-button" aria-label="Settings">
+          				<md-icon md-svg-icon="menu"></md-icon>
+          			</md-button>
+          			<md-button class="md-icon-button" aria-label="Share">
+          				<md-icon md-svg-icon="share"></md-icon>
+          			</md-button>
+        		</md-card-actions>
+      		</md-card>
+  		</div>
+      <div flex-gt-sm="25" flex="50">
+        <md-card ng-click="showTabDialog($event, 'Plato 3')">
+            <img ng-src="" class="md-card-image" alt="">
+            <md-card-title>
+                <md-card-title-text>
+                    
+                  </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <img flex="100" ng-src="images/plato1.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button class="md-icon-button" aria-label="Favorite">
+                  <md-icon md-svg-icon="heart"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Settings">
+                  <md-icon md-svg-icon="menu"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Share">
+                  <md-icon md-svg-icon="share"></md-icon>
+                </md-button>
+            </md-card-actions>
+          </md-card>
+        </div>
+        <div flex-gt-sm="25" flex="50">
+        <md-card ng-click="showTabDialog($event, 'Plato 4')">
+            <img ng-src="" class="md-card-image" alt="">
+            <md-card-title>
+                <md-card-title-text>
+                    
+                  </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <img flex="100" ng-src="images/plato1.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button class="md-icon-button" aria-label="Favorite">
+                  <md-icon md-svg-icon="heart"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Settings">
+                  <md-icon md-svg-icon="menu"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Share">
+                  <md-icon md-svg-icon="share"></md-icon>
+                </md-button>
+            </md-card-actions>
+          </md-card>
+        </div>
+        <div flex-gt-sm="25" flex="50">
+        <md-card ng-click="showTabDialog($event, 'Plato 5')">
+            <img ng-src="" class="md-card-image" alt="">
+            <md-card-title>
+                <md-card-title-text>
+                   <md-checkbox ng-model="isChecked" aria-label="Finished?"></md-checkbox>
+                  </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <img flex="100" ng-src="images/plato1.jpg" class="md-card-image" alt="" style="width: auto; height:auto">
+            </md-card-content>
+            <md-card-actions layout="row" layout-align="end center">
+                <md-button class="md-icon-button" aria-label="Favorite">
+                  <md-icon md-svg-icon="heart"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Settings">
+                  <md-icon md-svg-icon="menu"></md-icon>
+                </md-button>
+                <md-button class="md-icon-button" aria-label="Share">
+                  <md-icon md-svg-icon="share"></md-icon>
+                </md-button>
+            </md-card-actions>
+          </md-card>
+        </div>
+     </md-content>
+  </md-tab>
+  <md-tab label="Ensaladas">
+  	<md-content class="md-padding">
+          <h1 class="md-display-2">Tab One</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+    </md-content>
+  </md-tab>
+  <md-tab label="Bebidas">
+  	<md-content class="md-padding">
+          <h1 class="md-display-2">Tab One</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla venenatis ante augue. Phasellus volutpat neque ac dui mattis vulputate. Etiam consequat aliquam cursus. In sodales pretium ultrices. Maecenas lectus est, sollicitudin consectetur felis nec, feugiat ultricies mi.</p>
+    </md-content>
+  </md-tab>
+</md-tabs>
+>>>>>>> 7b531bbffbfa914041f9973a699c2fe05aca3239
